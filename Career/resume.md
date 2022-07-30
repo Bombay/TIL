@@ -45,6 +45,7 @@ vue(Nuxt/Quasar), typescript, eslint, prettier, springbatch, git
 
 > 어떤 개발 경험을 했는지?
 > 거기에서 어떤 문제를 해결했는지?
+
 → vue 도입
 → quasar 도입 (모바일)
 → jsp 사용 시 복붙하여 개발하던 사항들을 컴포넌트화 하여 db로 제어할 수 있게 됨

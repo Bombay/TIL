@@ -30,8 +30,8 @@ flex는 child의 크기를 무시하고 정렬한다
 ---
 
 ### items, contents
-`justify-contents``align-contents`: items 사이의 공간에 대한 property  
-`justify-items``align-items`: 공간을 차지하는 items에 대한 property
+`justify-contents` `align-contents`: items 사이의 공간에 대한 property  
+`justify-items` `align-items`: 공간을 차지하는 items에 대한 property
 
 
 

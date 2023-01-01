@@ -98,8 +98,7 @@ place-content: start stretch;
 `justify-items` `align-items` 를 cell에 단독으로 적용
 
 ## grid-auto-column, grid-auto-rows, grid-auto-flow
-`grid-auto-column` `grid-auto-rows`:  
-`grid-template-columns` `grid-template-rows` 에서 지정한 것 외에 cell이 추가됐을 경우 규칙 설정  
+`grid-auto-column` `grid-auto-rows` 갯수 지정 없이 cell에 대한 규칙 설정  
 
 `grid-auto-flow`: `flex-direction`과 비슷한 역할
 

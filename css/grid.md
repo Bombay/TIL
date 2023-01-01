@@ -63,15 +63,47 @@ grid-template-rows: repeat(4, 1fr);
 ## grid-template
 row / column 지정으로 `grid-template-columns` `grid-template-rows` `grid-template-areas` 보다 간편하게 사용 가능
 ```
+// grid-template-column 지정은 맨 마지막 줄에만 사용
 grid-template:
-'header header header header' 1fr / 1fr 1fr 1fr 1fr // row 1fr, 나머지 컬럼 1fr씩 지정
+'header header header header' 1fr
 'content content content nav' 2fr
-'footer footer footer footer' 1fr
+'footer footer footer footer' 1fr / 1fr 1fr 1fr 1fr // row 1fr, 나머지 column 1fr씩 지정
 ```
 
 ## justify-items, align-items, place-items
+`justify-items` grid cell 가로 축 규칙  
+`align-items` grid cell 세로 축 규칙
 ```
 justify-items: stretch; // 가로 기본값. start, end, center ...
 align-items: stretch; // 세로 기본값. start, end, center ...
 place-items: center stretch; // 세로 가로 한번에 지정
+```
+
+## content, items 차이
+content === grid  
+items === cell  
+grid element(container) !== grid // grid container는 말 그대로 container. grid는 그 안에 존재  
+
+## justify-content, align-content, place-content
+`justify-content` grid 가로 축 규칙  
+`align-content` grid 세로 축 규칙  
+```
+// start, end, stretch, space-between, space-evenly ...
+justify-content: start;
+align-content: stretch;
+place-content: start stretch;
+```
+
+## justify-self, align-self
+`justify-items` `align-items` 를 cell에 단독으로 적용
+
+## grid-auto-column, grid-auto-rows, grid-auto-flow
+`grid-auto-column` `grid-auto-rows`:  
+`grid-template-columns` `grid-template-rows` 에서 지정한 것 외에 cell이 추가됐을 경우 규칙 설정  
+
+`grid-auto-flow`: `flex-direction`과 비슷한 역할
+
+## minmax
+```
+grid-template-columns: repeat(4, minmax(100px, 1fr));
 ```

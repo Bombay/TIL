@@ -43,7 +43,7 @@ grid-template-areas:
 ```
 // 첫번째 컬럼라인에서 4번째 라인까지 차지
 grid-column: 1 / 4;
-grid-column: 1/ -1; // -1 은 끝에서 첫번째 (-1, -2, ...)
+grid-column: 1 / -1; // -1 은 끝에서 첫번째 (-1, -2, ...)
 grid-column: span 4; // 4개 block 차지
 
 // 두번째 로우라인에서 4번째 라인까지 차지
@@ -99,10 +99,13 @@ place-content: start stretch;
 
 ## grid-auto-column, grid-auto-rows, grid-auto-flow
 `grid-auto-column` `grid-auto-rows` 갯수 지정 없이 cell에 대한 규칙 설정  
-
-`grid-auto-flow`: `flex-direction`과 비슷한 역할
+`grid-auto-flow` -> `flex-direction`과 비슷한 역할
 
 ## minmax
 ```
 grid-template-columns: repeat(4, minmax(100px, 1fr));
 ```
+
+## auto-fit, auto-fill
+
+## min-content, max-content
